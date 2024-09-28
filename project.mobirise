@@ -79,7 +79,7 @@
       "settings": {
         "main": true,
         "title": "SRON - Programming Language",
-        "meta_descr": "SRON - \"World's fastest Interpreted Programming Language\". Blazingly Fast, Dynamically Typed, Single Treaded, Procedural, Compiled + Interpreted Programming Language",
+        "meta_descr": "SRON - World's fastest Interpreted Programming Language. Blazingly Fast, Dynamically Typed, Single Treaded, Procedural, Compiled + Interpreted Programming Language",
         "header_custom": "",
         "footer_custom": "",
         "html_before": "",
