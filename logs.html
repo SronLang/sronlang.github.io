@@ -38,8 +38,8 @@
     <link rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,800,300i,400i,500i,600i,700i,800i&display=swap">
   </noscript>
-  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=gzFYGM">
-  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=gzFYGM" type="text/css">
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=MJeI4y">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=MJeI4y" type="text/css">
 
 
 
@@ -127,7 +127,7 @@
         <div class="card col-md-12 col-lg-9">
           <div class="card-wrapper">
             <div class="image-wrapper d-flex justify-content-center mb-4">
-              <img src="assets/images/sron-official-logo-rect-2000x1125.webp" alt="Mobirise Website Builder">
+              <img src="assets/images/sron-logo-1916x1916.webp" alt="Mobirise Website Builder">
             </div>
             <div class="card-content-text">
               <h3 class="card-title mbr-fonts-style mbr-white mt-3 mb-4 display-2"><strong>Latest version 1.6:</strong>
@@ -154,6 +154,17 @@
                 </div>
                 <div class="item features-without-image col-12">
                   <div class="item-wrapper">
+                    <h4 class="mbr-section-subtitle mbr-fonts-style display-5"><strong>Added Strict argument
+                        passing:</strong></h4>
+                    <p class="mbr-text mbr-fonts-style display-7">SRON provides argument checks for runtime using
+                      <strong>Int_s</strong>, <strong>Double_s</strong>, <strong>Char_s</strong>,
+                      <strong>String_s</strong>, <strong>Bool_s</strong> and <strong>List_s. </strong>These keywords
+                      checks the type of arguments passed to a function and if the passed argument is not of expected
+                      type, then throws the exception.</p>
+                  </div>
+                </div>
+                <div class="item features-without-image col-12">
+                  <div class="item-wrapper">
                     <h4 class="mbr-section-subtitle mbr-fonts-style display-5"><strong>Added Static typing:</strong>
                     </h4>
                     <p class="mbr-text mbr-fonts-style display-7">SRON is now a statically + dynamically typed
@@ -172,6 +183,16 @@
                 </div>
                 <div class="item features-without-image col-12">
                   <div class="item-wrapper">
+                    <h4 class="mbr-section-subtitle mbr-fonts-style display-5"><strong>Bitwise operators added:</strong>
+                    </h4>
+                    <p class="mbr-text mbr-fonts-style display-7">Added bitwise operators to optimize your code on a
+                      whole another level. Introducing <strong>xor</strong>, <strong>lsft</strong>(left shift),
+                      <strong>rsft</strong>(right shift), <strong>and</strong>(bitwise and)<strong>&nbsp;</strong>,
+                      <strong>or</strong>(bitwise or)&nbsp;and <strong>not</strong>(bitwise not).</p>
+                  </div>
+                </div>
+                <div class="item features-without-image col-12">
+                  <div class="item-wrapper">
                     <h4 class="mbr-section-subtitle mbr-fonts-style display-5"><strong>Compiler optimization:</strong>
                     </h4>
                     <p class="mbr-text mbr-fonts-style display-7">SRON's compiler is highly optimized for big codebases.
@@ -182,8 +203,9 @@
                   <div class="item-wrapper">
                     <h4 class="mbr-section-subtitle mbr-fonts-style display-5"><strong>Compile-time
                         optimization:</strong></h4>
-                    <p class="mbr-text mbr-fonts-style display-7">SRON's compiler removes dead code, hashes variables,
-                      inbuilt function etc., unimportant tokens to generate highly optimized bytecode.&nbsp;</p>
+                    <p class="mbr-text mbr-fonts-style display-7">SRON's compiler removes dead code and unimportant
+                      tokens to generate highly optimized bytecode. Also, it hashes variables, inbuilt function etc. to
+                      reduce memory and power usage during&nbsp; runtime and increase the speed massively.</p>
                   </div>
                 </div>
                 <div class="item features-without-image col-12">
@@ -209,7 +231,7 @@
                     <h4 class="mbr-section-subtitle mbr-fonts-style display-5"><strong>Interpreter
                         Optimization:</strong></h4>
                     <p class="mbr-text mbr-fonts-style display-7">SRON interpreter's memory usage is decreased by 72%.
-                      Power usage decreased by 50%. Speed is increased by 48%.</p>
+                      Power usage decreased by 50%. Speed is increased by 48% for multiple scenarios.</p>
                   </div>
                 </div>
                 <div class="item features-without-image col-12">
@@ -231,7 +253,15 @@
                 </div>
                 <div class="item features-without-image col-12">
                   <div class="item-wrapper">
-                    <h4 class="mbr-section-subtitle mbr-fonts-style display-5"><strong>More assignment operator (+=, -=
+                    <h4 class="mbr-section-subtitle mbr-fonts-style display-5"><strong>Math Block Syntax changed (~{
+                        }~):</strong></h4>
+                    <p class="mbr-text mbr-fonts-style display-7">SRON's Mathematical block are now declared using
+                      '<strong>~{</strong>' instead of using '<strong>~</strong>' only.</p>
+                  </div>
+                </div>
+                <div class="item features-without-image col-12">
+                  <div class="item-wrapper">
+                    <h4 class="mbr-section-subtitle mbr-fonts-style display-5"><strong>New assignment operator (+=, -=
                         ...):</strong></h4>
                     <p class="mbr-text mbr-fonts-style display-7">Assignment operators are fast and quick, also it do
                       not change the underlying type of the variable. SRON's version 1.6 provides +=, -=, *=, /=, %= and
@@ -240,9 +270,27 @@
                 </div>
                 <div class="item features-without-image col-12">
                   <div class="item-wrapper">
+                    <h4 class="mbr-section-subtitle mbr-fonts-style display-5"><strong>Numeric attributes
+                        removed:</strong></h4>
+                    <p class="mbr-text mbr-fonts-style display-7">In SRON version 1.5 and before, we use numeric
+                      attributes but the new version 1.6 removed this to make writing code more faster and readable.</p>
+                  </div>
+                </div>
+                <div class="item features-without-image col-12">
+                  <div class="item-wrapper">
                     <h4 class="mbr-section-subtitle mbr-fonts-style display-5"><strong>Open source:</strong></h4>
-                    <p class="mbr-text mbr-fonts-style display-7">SRON is now an open source programming language. Go
-                      here and read.</p>
+                    <p class="mbr-text mbr-fonts-style display-7">SRON is now an open source programming language. Go <a
+                        href="https://github.com/saksham-joshi/SRON" class="text-primary" target="_blank">here</a> and
+                      read.</p>
+                  </div>
+                </div>
+                <div class="item features-without-image col-12">
+                  <div class="item-wrapper">
+                    <h4 class="mbr-section-subtitle mbr-fonts-style display-5"><strong>Precedence changed:</strong></h4>
+                    <p class="mbr-text mbr-fonts-style display-7">Precedence of '<strong>&lt;='&nbsp;</strong>,
+                      '<strong>&gt;='&nbsp;</strong>, '<strong>&gt;'&nbsp;</strong>,
+                      '<strong>&lt;'&nbsp;</strong>&nbsp;'<strong>==' ,&nbsp;</strong>'<strong>!=</strong>' changed.
+                      Now, &lt;=, &gt;=, &lt;, &gt; will have higher precedence than == and !=.</p>
                   </div>
                 </div>
                 <div class="item features-without-image col-12">
@@ -304,8 +352,8 @@
                 class="text-primary" target="_blank">Sample</a></li>
             <li class="header-menu-item mbr-fonts-style display-5"><a href="index.html" class="text-primary"
                 target="_blank">Home</a></li>
-            <li class="header-menu-item mbr-fonts-style display-5"><a href="contributors.html" class="text-primary"
-                target="_blank">Contributors</a></li>
+            <li class="header-menu-item mbr-fonts-style display-5"><a href="logs.html" class="text-primary"
+                target="_blank">Logs</a></li>
           </ul>
         </div>
 
