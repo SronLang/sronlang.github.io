@@ -2368,7 +2368,7 @@
     "contributors.html": {
       "settings": {
         "title": "Contributors of SRON",
-        "meta_descr": "SRON is an open sourced programming language. Originally created by Saksham Joshi, a 21 years old Indian Boy with just 2 years of programming experience.",
+        "meta_descr": "SRON is an open sourced programming language. Originally created by Saksham Joshi at the age of 21 year with just 2 years of programming experience.",
         "header_custom": "",
         "footer_custom": "",
         "html_before": "",
