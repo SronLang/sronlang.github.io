@@ -1,457 +1,1267 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="content-language" content="en">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:image:src" content="assets/images/logs-meta.png">
-  <meta property="og:image" content="assets/images/logs-meta.png">
-  <meta name="twitter:title" content="SRON's Logs">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <link rel="shortcut icon" href="assets/images/sron-rounded-corner-128x128.png" type="image/x-icon">
-  <meta name="description"
-    content="Read logs and updates of latest version of SRON programming language. Fixed bugs and vulnerabilities of SRON. Report bugs. Saksham Rapid Object Notation.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+    <meta name="description" content="Reads the logs of updates of SRON Programming Language for version 2.1, 2.2 and 2.3. Know what's new features and understand what are the things which makes SRON so great">
+    <meta name="keywords" content="sron programming language software logs updates Sron-version version saksham-joshi sakshamjoshi27 saksham joshi sron-programming-language fastest hybrid-programming-language">
+    <meta name="author" content="SAKSHAM JOSHI">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <meta name="referrer" content="no-referrer">
+    <meta name="theme-color" content="#083359">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image:src" content="assets/images/sron-logo-1916x1916.webp">
+    <meta name="twitter:title" content="SRON Logs and Updates">
 
+    <meta property="og:title" content="SRON Logs and Updates">
+    <meta property="og:description" content="Reads the logs of updates of SRON Programming Language for version 2.1, 2.2 and 2.3. Know what's new features and understand what are the things which makes SRON so great">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sronlang.github.io">
+    <meta property="og:image" content="assets/images/sron-logo-1916x1916.webp">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="assets/images/sron-logo-1916x1916.webp">
+    
+    <link
+      rel="shortcut icon"
+      href="assets/images/sron-rounded-corner-128x128.png"
+      type="image/x-icon"
+    />
+    <meta
+      name="description"
+      content="Read logs and updates of latest version of SRON programming language. Fixed bugs and vulnerabilities of SRON. Report bugs. Saksham Rapid Object Notation."
+    />
 
-  <title>SRON's Logs</title>
-  <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
-  <link rel="stylesheet" href="assets/web/assets/mobirise-icons-bold/mobirise-icons-bold.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
-  <link rel="stylesheet" href="assets/animatecss/animate.css">
-  <link rel="stylesheet" href="assets/dropdown/css/style.css">
-  <link rel="stylesheet" href="assets/socicon/css/styles.css">
-  <link rel="stylesheet" href="assets/theme/css/style.css">
-  <link rel="preload" href="https://fonts.googleapis.com/css?family=B612:400,400i,700,700i&display=swap" as="style"
-    onload="this.onload=null;this.rel='stylesheet'">
-  <noscript>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=B612:400,400i,700,700i&display=swap">
-  </noscript>
-  <link rel="preload"
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,800,300i,400i,500i,600i,700i,800i&display=swap"
-    as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript>
-    <link rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,800,300i,400i,500i,600i,700i,800i&display=swap">
-  </noscript>
-  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=sfdVT9">
-  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=sfdVT9" type="text/css">
+    <title>SRON's Logs</title>
+    <link
+      rel="stylesheet"
+      href="assets/web/assets/mobirise-icons2/mobirise2.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/web/assets/mobirise-icons-bold/mobirise-icons-bold.css"
+    />
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css" />
+    <link
+      rel="stylesheet"
+      href="assets/bootstrap/css/bootstrap-reboot.min.css"
+    />
+    <link rel="stylesheet" href="assets/animatecss/animate.css" />
+    <link rel="stylesheet" href="assets/dropdown/css/style.css" />
+    <link rel="stylesheet" href="assets/socicon/css/styles.css" />
+    <link rel="stylesheet" href="assets/theme/css/style.css" />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css?family=B612:400,400i,700,700i&display=swap"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=B612:400,400i,700,700i&display=swap"
+      />
+    </noscript>
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,800,300i,400i,500i,600i,700i,800i&display=swap"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,800,300i,400i,500i,600i,700i,800i&display=swap"
+      />
+    </noscript>
+    <link
+      rel="preload"
+      as="style"
+      href="assets/mobirise/css/mbr-additional.css?v=sfdVT9"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/mobirise/css/mbr-additional.css?v=sfdVT9"
+      type="text/css"
+    />
+  </head>
 
-
-
-
-</head>
-
-<body>
-
-  <section data-bs-version="5.1" class="menu menu1 cid-upytSnaDWe" once="menu" id="menu01-1h">
-
-
-    <nav class="navbar navbar-dropdown navbar-expand-lg">
-      <div class="container">
-        <div class="navbar-brand">
-          <span class="navbar-logo">
-            <a href="index.html">
-              <img src="assets/images/sron-transparent-1.webp" alt="SRON Logo" style="height: 4.1rem;">
-            </a>
-          </span>
-          <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-4">v2.2</a></span>
-        </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse"
-          data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+  <body>
+    <section
+      data-bs-version="5.1"
+      class="menu menu1 cid-upytSnaDWe"
+      once="menu"
+      id="menu01-1h"
+    >
+      <nav class="navbar navbar-dropdown navbar-expand-lg">
+        <div class="container">
+          <div class="navbar-brand">
+            <span class="navbar-logo">
+              <a href="index.html">
+                <img
+                  src="assets/images/sron-transparent-1.webp"
+                  alt="SRON Logo"
+                  style="height: 4.1rem"
+                />
+              </a>
+            </span>
+            <span class="navbar-caption-wrap"
+              ><a class="navbar-caption text-white display-4">v2.3</a></span
+            >
           </div>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
-            <li class="nav-item">
-              <a class="nav-link link text-warning text-primary display-4" href="logs.html" aria-expanded="false"
-                target="_blank">Logs</a>
-            </li>
-            <li class="nav-item"><a class="nav-link link text-warning display-4" href="https://sron.gitbook.io/docs"
-                target="_blank">Docs</a></li>
-            <li class="nav-item">
-              <a class="nav-link link text-warning display-4" href="https://github.com/saksham-joshi/SRON"
-                target="_blank">GitHub</a>
-            </li>
-            <li class="nav-item"><a class="nav-link link text-warning text-primary display-4"
-                href="https://www.linkedin.com/newsletters/7194010678465040385/" target="_blank">Newsletter</a></li>
-            <li class="nav-item"><a class="nav-link link text-warning text-primary display-4" href="contributors.html"
-                target="_blank">Contributors</a></li>
-          </ul>
-
-          <div class="navbar-buttons mbr-section-btn"><a class="btn btn-primary display-4" href="download.html"
-              target="_blank">Download</a></div>
-        </div>
-      </div>
-    </nav>
-  </section>
-
-  <section data-bs-version="5.1" class="header16 cid-upytSnuf2I" id="header16-1i">
-
-
-
-
-
-    <div class="text-center container-fluid">
-
-      <div class="row justify-content-center">
-        <div class="col-md-12 col-lg-9">
-          <h1 class="mbr-section-title mbr-fonts-style mt-4 display-1"><strong>S.R.O.N.</strong><br>{Logs &amp; Updates}
-          </h1>
-          <p class="mbr-text mbr-fonts-style mt-4 display-7"><em>SRON go through updates and fixes everytime, someone
-              reports some bugs and vulnerabilities.</em></p>
-
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section data-bs-version="5.1" class="article8 cid-upyv5ZNLR0" id="article08-1l">
-
-
-
-
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="card col-md-12 col-lg-9">
-          <div class="card-wrapper">
-            <div class="image-wrapper d-flex justify-content-center mb-4">
-              <img src="assets/images/sron-logo-1916x1916.webp" alt="Sron-Logo">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-bs-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <div class="hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
             </div>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
+              <li class="nav-item">
+                <a
+                  class="nav-link link text-warning text-primary display-4"
+                  href="logs.html"
+                  aria-expanded="false"
+                  target="_blank"
+                  >Logs</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link link text-warning display-4"
+                  href="https://sron.gitbook.io/docs"
+                  target="_blank"
+                  >Docs</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link link text-warning display-4"
+                  href="https://github.com/saksham-joshi/SRON"
+                  target="_blank"
+                  >GitHub</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link link text-warning text-primary display-4"
+                  href="https://www.linkedin.com/newsletters/7194010678465040385/"
+                  target="_blank"
+                  >Newsletter</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link link text-warning text-primary display-4"
+                  href="contributors.html"
+                  target="_blank"
+                  >Contributors</a
+                >
+              </li>
+            </ul>
 
-            <div class="card-content-text">
+            <div class="navbar-buttons mbr-section-btn">
+              <a
+                class="btn btn-primary display-4"
+                href="download.html"
+                target="_blank"
+                >Download</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section>
 
-              <h3 class="card-title mbr-fonts-style mbr-white mt-3 mb-4 display-2">
-                <strong>Latest version 2.2:</strong>
-              </h3>
+    <section
+      data-bs-version="5.1"
+      class="header16 cid-upytSnuf2I"
+      id="header16-1i"
+    >
+      <div class="text-center container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-md-12 col-lg-9">
+            <h1 class="mbr-section-title mbr-fonts-style mt-4 display-1">
+              <strong>S.R.O.N.</strong><br />{Logs &amp; Updates}
+            </h1>
+            <p class="mbr-text mbr-fonts-style mt-4 display-7">
+              <em
+                >SRON go through updates and fixes everytime, someone reports
+                some bugs and vulnerabilities.</em
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-              <div class="row card-box align-left">
-
-                <div class="item features-without-image col-12">
-                  <div class="item-wrapper">
-                    <h4 class="mbr-section-subtitle mbr-fonts-style display-5"><strong>Added 'ArgumentException':</strong>
-                    </h4>
-                    <p class="mbr-text mbr-fonts-style display-7">
-                      If you detect that the arguments passed to a function is incorrect, then you can display 'ArgumentException' (denotes that the
-                      passed arguments are of wrong type) into the terminal.
-                    </p>
+    <!--SRON VERSION 2.3-->
+    <section
+      data-bs-version="5.1"
+      class="article8 cid-upyv5ZNLR0"
+      id="article08-1l"
+    >
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="card col-md-12 col-lg-9">
+            <div class="card-wrapper">
+              <div class="image-wrapper d-flex justify-content-center mb-4">
+                <img
+                  src="assets/images/sron-logo-1916x1916.webp"
+                  alt="Sron-Logo"
+                />
+              </div>
+              <div class="card-content-text">
+                <h3
+                  class="card-title mbr-fonts-style mbr-white mt-3 mb-4 display-2"
+                >
+                  <strong>Latest version 2.3:</strong>
+                </h3>
+                <div class="row card-box align-left">
+                  <div class="item features-without-image col-12">
+                    <div class="item-wrapper">
+                      <h4
+                        class="mbr-section-subtitle mbr-fonts-style display-5"
+                      >
+                        <strong>SRON for Linux:</strong>
+                      </h4>
+                      <p class="mbr-text mbr-fonts-style display-7">
+                        SRON is now officially available for Linux platforms
+                        bringing its speed and efficiency beyond Windows.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="item features-without-image col-12">
+                    <div class="item-wrapper">
+                      <h4
+                        class="mbr-section-subtitle mbr-fonts-style display-5"
+                      >
+                        <strong>Interpreter Stability Fix:</strong>
+                      </h4>
+                      <p class="mbr-text mbr-fonts-style display-7">
+                        Resolved a critical bug where the interpreter terminated
+                        abruptly (without error output) when the call stack
+                        overflowed.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="item features-without-image col-12">
+                    <div class="item-wrapper">
+                      <h4
+                        class="mbr-section-subtitle mbr-fonts-style display-5"
+                      >
+                        <strong>Expanded Call Stack:</strong>
+                      </h4>
+                      <p class="mbr-text mbr-fonts-style display-7">
+                        The interpreter now supports a call stack size of 2000,
+                        offering double the depth Python allows (996).
+                      </p>
+                    </div>
+                  </div>
+                  <div class="item features-without-image col-12">
+                    <div class="item-wrapper">
+                      <h4
+                        class="mbr-section-subtitle mbr-fonts-style display-5"
+                      >
+                        <strong>Precise Execution Time:</strong>
+                      </h4>
+                      <p class="mbr-text mbr-fonts-style display-7">
+                        <strong>get_exec_time()</strong> now returns results in
+                        milliseconds instead of seconds, enabling more precise
+                        performance measurements.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="item features-without-image col-12">
+                    <div class="item-wrapper">
+                      <h4
+                        class="mbr-section-subtitle mbr-fonts-style display-5"
+                      >
+                        <strong>Improved Typing Convention:</strong>
+                      </h4>
+                      <p class="mbr-text mbr-fonts-style display-7">
+                        Interpreter typing conventions have been standardized
+                        for better consistency, readability, and understanding.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="item features-without-image col-12">
+                    <div class="item-wrapper">
+                      <h4
+                        class="mbr-section-subtitle mbr-fonts-style display-5"
+                      >
+                        <strong>Accurate Compiler Diagnostics:</strong>
+                      </h4>
+                      <p class="mbr-text mbr-fonts-style display-7">
+                        Fixed an issue where the compiler displayed incorrect
+                        line numbers in error messages.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="item features-without-image col-12">
+                    <div class="item-wrapper">
+                      <h4
+                        class="mbr-section-subtitle mbr-fonts-style display-5"
+                      >
+                        <strong>Enhanced Error Messages:</strong>
+                      </h4>
+                      <p class="mbr-text mbr-fonts-style display-7">
+                        All exceptions and error messages are now cleaner,
+                        clearer, and more informative.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="item features-without-image col-12">
+                    <div class="item-wrapper">
+                      <h4
+                        class="mbr-section-subtitle mbr-fonts-style display-5"
+                      >
+                        <strong>Colorized Output:</strong>
+                      </h4>
+                      <p class="mbr-text mbr-fonts-style display-7">
+                        Compiler and interpreter messages now include colored
+                        text for improved visibility — from errors and
+                        exceptions to general information.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="item features-without-image col-12">
+                    <div class="item-wrapper">
+                      <h4
+                        class="mbr-section-subtitle mbr-fonts-style display-5"
+                      >
+                        <strong>Cleaner Codebase:</strong>
+                      </h4>
+                      <p class="mbr-text mbr-fonts-style display-7">
+                        Internal code structure has been reorganized for higher
+                        readability, maintainability, and extensibility.
+                      </p>
+                    </div>
                   </div>
                 </div>
-
-                <div class="item features-without-image col-12">
-                  <div class="item-wrapper">
-                    <h4 class="mbr-section-subtitle mbr-fonts-style display-5"><strong>Added 'OBUFFER' keyword:</strong>
-                    </h4>
-                    <p class="mbr-text mbr-fonts-style display-7">
-                      OBUFFER keyword can be used to put values in a buffer which can be later displayed on terminal/console
-                      at once. It can be used to achieve greater optimization levels. Know more from 
-                      <a href="https://sron.gitbook.io/docs/obuffer">here</a>.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="item features-without-image col-12">
-                  <div class="item-wrapper">
-                    <h4 class="mbr-section-subtitle mbr-fonts-style display-5"><strong>Added 'sron_cmd()' function:</strong>
-                    </h4>
-                    <p class="mbr-text mbr-fonts-style display-7">
-                      To get the information and perform operations on internal components, sron_cmd() function can be used. Know more 
-                      <a href="https://sron.gitbook.io/docs/special-codes-of-sron_cmd">here</a>.
-                    </p>
-                  </div>
-                </div>
-              
-                <div class="item features-without-image col-12 active">
-                  <div class="item-wrapper">
-                    <h4 class="mbr-section-subtitle mbr-fonts-style display-5"><strong>Better Semantic
-                        Analysis:</strong></h4>
-                    <p class="mbr-text mbr-fonts-style display-7">SRON version 2.2's compiler detects syntax errors 
-                      and displays accurate & easy error messages for great developer experience.</p>
-                  </div>
-                </div>
-                
-                <div class="item features-without-image col-12">
-                  <div class="item-wrapper">
-                    <h4 class="mbr-section-subtitle mbr-fonts-style display-5"><strong>Caching of bytecode:</strong>
-                    </h4>
-                    <p class="mbr-text mbr-fonts-style display-7">
-                      To achieve faster user defined function calls, the bytecode is now cached and once a function is loaded,
-                      it will not be loaded again.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="item features-without-image col-12">
-                  <div class="item-wrapper">
-                    <h4 class="mbr-section-subtitle mbr-fonts-style display-5"><strong>Compile-time
-                        optimization:</strong></h4>
-                    <p class="mbr-text mbr-fonts-style display-7">SRON's compiler removes dead code and unimportant
-                      tokens to generate highly optimized bytecode. Also, it indexes variables, inbuilt function etc. to
-                      reduce memory and power usage during&nbsp; runtime and increases speed to next level.</p>
-                  </div>
-                </div>
-
-                <div class="item features-without-image col-12">
-                  <div class="item-wrapper">
-                    <h4 class="mbr-section-subtitle mbr-fonts-style mb-3 display-5"><strong>Deep Optimized GC:
-                        </strong></h4>
-                    <p class="mbr-text mbr-fonts-style display-7">
-                      The speed and memory usage of Garbage Collector is taken to another level with deep optimization and better efficiency. SRON's Garbage
-                      Collector manages memory automatically and avoid memory leaks, making SRON - a safe and stable language.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="item features-without-image col-12">
-                  <div class="item-wrapper">
-                    <h4 class="mbr-section-subtitle mbr-fonts-style display-5"><strong>Developed using Clang:</strong></h4>
-                    <p class="mbr-text mbr-fonts-style display-7">
-                      For faster, efficient and optimized compiler and interpreter, the whole SRON's codebase is 
-                      shifted to Clang with <strong>C++23</strong>. All previous versions( < v2.2) were developed using GCC with C++11.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="item features-without-image col-12">
-                  <div class="item-wrapper">
-                    <h4 class="mbr-section-subtitle mbr-fonts-style display-5"><strong>Faster 'console' attribute':</strong></h4>
-                    <p class="mbr-text mbr-fonts-style display-7">
-                      <strong>'console'</strong> attribute is highly optimized for tight loops with insane speed specially when used with <strong>'OBUFFER'</strong>.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="item features-without-image col-12">
-                  <div class="item-wrapper">
-                    <h4 class="mbr-section-subtitle mbr-fonts-style display-5"><strong>Faster function calls:</strong></h4>
-                    <p class="mbr-text mbr-fonts-style display-7">
-                      Now, the in-built function calls are faster and user-defined function are also optimized with a whole new BytecodeReader.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="item features-without-image col-12">
-                  <div class="item-wrapper">
-                    <h4 class="mbr-section-subtitle mbr-fonts-style display-5"><strong>Faster variable access:</strong></h4>
-                    <p class="mbr-text mbr-fonts-style display-7">
-                      Now, accessing variables is faster and efficient along with compile+run time checks.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="item features-without-image col-12">
-                  <div class="item-wrapper">
-                    <h4 class="mbr-section-subtitle mbr-fonts-style display-5"><strong>Fixed invalid exit code:</strong></h4>
-                    <p class="mbr-text mbr-fonts-style display-7">
-                      In version 2.1 and before, after the successful or unsuccessful execution, the exit code was always 0. Now, certain exit codes will be 
-                      returned for error/exception detection. Read from <a href="">here</a>
-                    </p>
-                  </div>
-                </div>
-
-                <div class="item features-without-image col-12">
-                  <div class="item-wrapper">
-                    <h4 class="mbr-section-subtitle mbr-fonts-style display-5"><strong>Fixed Renaming vulnerability:</strong></h4>
-                    <p class="mbr-text mbr-fonts-style display-7">
-                      SRON version 2.2 ensures that if the bytecode file is renamed then the interpreter will detect it and throw the exception.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="item features-without-image col-12">
-                  <div class="item-wrapper">
-                    <h4 class="mbr-section-subtitle mbr-fonts-style display-5"><strong>Fixed 'rotate' bug:</strong></h4>
-                    <p class="mbr-text mbr-fonts-style display-7">
-                      "Variable not found" error is fixed for variables in 'rotate' attribute.</p>
-                  </div>
-                </div>
-
-                <div class="item features-without-image col-12">
-                  <div class="item-wrapper">
-                    <h4 class="mbr-section-subtitle mbr-fonts-style display-5"><strong>Fixed Segfault:</strong></h4>
-                    <p class="mbr-text mbr-fonts-style display-7">
-                      In version 2.1, if an element of a list is stored in a variable and then the list is cleared using
-                      'clear()' function and then if you try to access that variable, the interpreter gets halted by 
-                      Segmentation Fault. This Bug is fixed by optimization & correction of Memory model & Garbage Collector.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="item features-without-image col-12">
-                  <div class="item-wrapper">
-                    <h4 class="mbr-section-subtitle mbr-fonts-style display-5"><strong>Fixed Variable Analysis:</strong></h4>
-                    <p class="mbr-text mbr-fonts-style display-7">
-                      In version 2.1, if a function is being declared within sub-scope and then it is used outside that scope,
-                      the runtime error is triggered instead of compile time error. This problem is fixed now.</p>
-                  </div>
-                </div>
-
-                <div class="item features-without-image col-12">
-                  <div class="item-wrapper">
-                    <h4 class="mbr-section-subtitle mbr-fonts-style display-5"><strong>Interpreter
-                        Optimization:</strong></h4>
-                    <p class="mbr-text mbr-fonts-style display-7">SRON interpreter's is optimized greatly with 48% enhancement in speed and
-                      Power usage decreased by 25%.</p>
-                  </div>
-                </div>
-
-                <div class="item features-without-image col-12">
-                  <div class="item-wrapper">
-                    <h4 class="mbr-section-subtitle mbr-fonts-style display-5"><strong>Mutating code support:</strong></h4>
-                    <p class="mbr-text mbr-fonts-style display-7">
-                      The bytecode is being cached by the interpreter so SRON now doesn't support mutating code.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="item features-without-image col-12">
-                  <div class="item-wrapper">
-                    <h4 class="mbr-section-subtitle mbr-fonts-style display-5"><strong>Open source 2.1:</strong></h4>
-                    <p class="mbr-text mbr-fonts-style display-7">SRON v2.1 is now completely open sourced. Check it out from <a
-                        href="https://github.com/saksham-joshi/SRON" class="text-primary" target="_blank">here</a>.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="item features-without-image col-12">
-                  <div class="item-wrapper">
-                    <h4 class="mbr-section-subtitle mbr-fonts-style display-5"><strong>Optimized print & println:</strong></h4>
-                    <p class="mbr-text mbr-fonts-style display-7">
-                      Speed of 'print()' and 'println()' is improved even long print statements even in tight loops.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="item features-without-image col-12">
-                  <div class="item-wrapper">
-                    <h4 class="mbr-section-subtitle mbr-fonts-style display-5"><strong>Removed 'free'
-                        attribute:</strong></h4>
-                    <p class="mbr-text mbr-fonts-style display-7">As everything related to memory is managed by Garbage Collector
-                      so the '<strong>free</strong>' attribute is removed which opened new gates for better optimizations.</p>
-                  </div>
-                </div>
-
-                <div class="item features-without-image col-12">
-                  <div class="item-wrapper">
-                    <h4 class="mbr-section-subtitle mbr-fonts-style display-5"><strong>Removed execution time message:</strong></h4>
-                    <p class="mbr-text mbr-fonts-style display-7">After complete execution of the code, the interpreter use to print the total
-                      time taken to execute the code. That is removed and now to get the execution time, you should call 
-                      '<strong>get_exec_code()</strong>' function which returns the time taken in value of type <strong>'Double'</strong>.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="item features-without-image col-12">
-                  <div class="item-wrapper">
-                    <h4 class="mbr-section-subtitle mbr-fonts-style display-5"><strong>Safe and secure
-                        bytecode:</strong></h4>
-                    <p class="mbr-text mbr-fonts-style display-7">Before version 2.2, the bytecode generated by the
-                      compiler can be modified by renaming the bytecode file and its modification cannot be detected but now
-                      SRON's interpreter will verify the integrity of the bytecode before executing its code.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="item features-without-image col-12">
-                  <div class="item-wrapper">
-                    <h4 class="mbr-section-subtitle mbr-fonts-style display-5">
-                      <strong>Strict case-sensitivity:</strong>
-                    </h4>
-                    <p class="mbr-text mbr-fonts-style display-7">
-                      Function calls and their declaration is now strictly case sensitive. If not followed, you will face
-                      both compile and runtime errors.</p>
-                  </div>
-                </div>
-
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section data-bs-version="5.1" class="footer3 cid-upytSods3S" once="footers" id="footer03-1k">
+    <!--SRON VERSION 2.2-->
+    <section
+      data-bs-version="5.1"
+      class="article8 cid-upyv5ZNLR0"
+      id="article08-1l"
+    >
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="card col-md-12 col-lg-9">
+            <div class="card-wrapper">
+              <div class="image-wrapper d-flex justify-content-center mb-4">
+                <img
+                  src="assets/images/sron-logo-1916x1916.webp"
+                  alt="Sron-Logo"
+                />
+              </div>
 
+              <div class="card-content-text">
+                <h3
+                  class="card-title mbr-fonts-style mbr-white mt-3 mb-4 display-2"
+                >
+                  <strong>Version 2.2:</strong>
+                </h3>
 
+                <div class="row card-box align-left">
+                  <div class="item features-without-image col-12">
+                    <div class="item-wrapper">
+                      <h4
+                        class="mbr-section-subtitle mbr-fonts-style display-5"
+                      >
+                        <strong>Added 'ArgumentException':</strong>
+                      </h4>
+                      <p class="mbr-text mbr-fonts-style display-7">
+                        If you detect that the arguments passed to a function is
+                        incorrect, then you can display 'ArgumentException'
+                        (denotes that the passed arguments are of wrong type)
+                        into the terminal.
+                      </p>
+                    </div>
+                  </div>
 
+                  <div class="item features-without-image col-12">
+                    <div class="item-wrapper">
+                      <h4
+                        class="mbr-section-subtitle mbr-fonts-style display-5"
+                      >
+                        <strong>Added 'OBUFFER' keyword:</strong>
+                      </h4>
+                      <p class="mbr-text mbr-fonts-style display-7">
+                        OBUFFER keyword can be used to put values in a buffer
+                        which can be later displayed on terminal/console at
+                        once. It can be used to achieve greater optimization
+                        levels. Know more from
+                        <a href="https://sron.gitbook.io/docs/obuffer">here</a>.
+                      </p>
+                    </div>
+                  </div>
 
+                  <div class="item features-without-image col-12">
+                    <div class="item-wrapper">
+                      <h4
+                        class="mbr-section-subtitle mbr-fonts-style display-5"
+                      >
+                        <strong>Added 'sron_cmd()' function:</strong>
+                      </h4>
+                      <p class="mbr-text mbr-fonts-style display-7">
+                        To get the information and perform operations on
+                        internal components, sron_cmd() function can be used.
+                        Know more
+                        <a
+                          href="https://sron.gitbook.io/docs/special-codes-of-sron_cmd"
+                          >here</a
+                        >.
+                      </p>
+                    </div>
+                  </div>
 
-    <div class="container">
-      <div class="row">
-        <div class="row-links">
-          <ul class="header-menu">
+                  <div class="item features-without-image col-12 active">
+                    <div class="item-wrapper">
+                      <h4
+                        class="mbr-section-subtitle mbr-fonts-style display-5"
+                      >
+                        <strong>Better Semantic Analysis:</strong>
+                      </h4>
+                      <p class="mbr-text mbr-fonts-style display-7">
+                        SRON version 2.2's compiler detects syntax errors and
+                        displays accurate & easy error messages for great
+                        developer experience.
+                      </p>
+                    </div>
+                  </div>
 
+                  <div class="item features-without-image col-12">
+                    <div class="item-wrapper">
+                      <h4
+                        class="mbr-section-subtitle mbr-fonts-style display-5"
+                      >
+                        <strong>Caching of bytecode:</strong>
+                      </h4>
+                      <p class="mbr-text mbr-fonts-style display-7">
+                        To achieve faster user defined function calls, the
+                        bytecode is now cached and once a function is loaded, it
+                        will not be loaded again.
+                      </p>
+                    </div>
+                  </div>
 
+                  <div class="item features-without-image col-12">
+                    <div class="item-wrapper">
+                      <h4
+                        class="mbr-section-subtitle mbr-fonts-style display-5"
+                      >
+                        <strong>Compile-time optimization:</strong>
+                      </h4>
+                      <p class="mbr-text mbr-fonts-style display-7">
+                        SRON's compiler removes dead code and unimportant tokens
+                        to generate highly optimized bytecode. Also, it indexes
+                        variables, inbuilt function etc. to reduce memory and
+                        power usage during&nbsp; runtime and increases speed to
+                        next level.
+                      </p>
+                    </div>
+                  </div>
 
+                  <div class="item features-without-image col-12">
+                    <div class="item-wrapper">
+                      <h4
+                        class="mbr-section-subtitle mbr-fonts-style mb-3 display-5"
+                      >
+                        <strong>Deep Optimized GC: </strong>
+                      </h4>
+                      <p class="mbr-text mbr-fonts-style display-7">
+                        The speed and memory usage of Garbage Collector is taken
+                        to another level with deep optimization and better
+                        efficiency. SRON's Garbage Collector manages memory
+                        automatically and avoid memory leaks, making SRON - a
+                        safe and stable language.
+                      </p>
+                    </div>
+                  </div>
 
-            <li class="header-menu-item mbr-fonts-style display-5"><a href="https://sron.gitbook.io/docs"
-                class="text-primary" target="_blank">Docs</a></li>
-            <li class="header-menu-item mbr-fonts-style display-5"><a href="https://sron.gitbook.io/docs/sample-codes"
-                class="text-primary" target="_blank">Sample</a></li>
-            <li class="header-menu-item mbr-fonts-style display-5"><a href="index.html" class="text-primary"
-                target="_blank">Home</a></li>
-            <li class="header-menu-item mbr-fonts-style display-5"><a href="logs.html" class="text-primary"
-                target="_blank">Logs</a></li>
-          </ul>
-        </div>
+                  <div class="item features-without-image col-12">
+                    <div class="item-wrapper">
+                      <h4
+                        class="mbr-section-subtitle mbr-fonts-style display-5"
+                      >
+                        <strong>Developed using Clang:</strong>
+                      </h4>
+                      <p class="mbr-text mbr-fonts-style display-7">
+                        For faster, efficient and optimized compiler and
+                        interpreter, the whole SRON's codebase is shifted to
+                        Clang with <strong>C++23</strong>. All previous
+                        versions( < v2.2) were developed using GCC with C++11.
+                      </p>
+                    </div>
+                  </div>
 
-        <div class="col-12 mt-4">
-          <div class="social-row">
-            <div class="soc-item">
-              <a href="https://sron.gitbook.io/docs/donate" target="_blank">
-                <span class="mbr-iconfont display-7 mobi-mbri-cash mobi-mbri"></span>
-              </a>
-            </div>
-            <div class="soc-item">
-              <a href="https://x.com/sakshamjoshi27" target="_blank">
-                <span class="mbr-iconfont socicon-twitter socicon"></span>
-              </a>
-            </div>
-            <div class="soc-item">
-              <a href="https://www.instagram.com/sakshamjoshi27/" target="_blank">
-                <span class="mbr-iconfont socicon-instagram socicon"></span>
-              </a>
-            </div>
-            <div class="soc-item">
-              <a href="https://linkedin.com/in/sakshamjoshi27" target="_blank">
-                <span class="mbr-iconfont socicon-linkedin socicon"></span>
-              </a>
-            </div>
-            <div class="soc-item">
-              <a href="https://github.com/saksham-joshi/" target="_blank">
-                <span class="mbr-iconfont mbrib-github"></span>
-              </a>
+                  <div class="item features-without-image col-12">
+                    <div class="item-wrapper">
+                      <h4
+                        class="mbr-section-subtitle mbr-fonts-style display-5"
+                      >
+                        <strong>Faster 'console' attribute':</strong>
+                      </h4>
+                      <p class="mbr-text mbr-fonts-style display-7">
+                        <strong>'console'</strong> attribute is highly optimized
+                        for tight loops with insane speed specially when used
+                        with <strong>'OBUFFER'</strong>.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="item features-without-image col-12">
+                    <div class="item-wrapper">
+                      <h4
+                        class="mbr-section-subtitle mbr-fonts-style display-5"
+                      >
+                        <strong>Faster function calls:</strong>
+                      </h4>
+                      <p class="mbr-text mbr-fonts-style display-7">
+                        Now, the in-built function calls are faster and
+                        user-defined function are also optimized with a whole
+                        new BytecodeReader.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="item features-without-image col-12">
+                    <div class="item-wrapper">
+                      <h4
+                        class="mbr-section-subtitle mbr-fonts-style display-5"
+                      >
+                        <strong>Faster variable access:</strong>
+                      </h4>
+                      <p class="mbr-text mbr-fonts-style display-7">
+                        Now, accessing variables is faster and efficient along
+                        with compile+run time checks.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="item features-without-image col-12">
+                    <div class="item-wrapper">
+                      <h4
+                        class="mbr-section-subtitle mbr-fonts-style display-5"
+                      >
+                        <strong>Fixed invalid exit code:</strong>
+                      </h4>
+                      <p class="mbr-text mbr-fonts-style display-7">
+                        In version 2.1 and before, after the successful or
+                        unsuccessful execution, the exit code was always 0. Now,
+                        certain exit codes will be returned for error/exception
+                        detection. Read from <a href="">here</a>
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="item features-without-image col-12">
+                    <div class="item-wrapper">
+                      <h4
+                        class="mbr-section-subtitle mbr-fonts-style display-5"
+                      >
+                        <strong>Fixed Renaming vulnerability:</strong>
+                      </h4>
+                      <p class="mbr-text mbr-fonts-style display-7">
+                        SRON version 2.2 ensures that if the bytecode file is
+                        renamed then the interpreter will detect it and throw
+                        the exception.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="item features-without-image col-12">
+                    <div class="item-wrapper">
+                      <h4
+                        class="mbr-section-subtitle mbr-fonts-style display-5"
+                      >
+                        <strong>Fixed 'rotate' bug:</strong>
+                      </h4>
+                      <p class="mbr-text mbr-fonts-style display-7">
+                        "Variable not found" error is fixed for variables in
+                        'rotate' attribute.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="item features-without-image col-12">
+                    <div class="item-wrapper">
+                      <h4
+                        class="mbr-section-subtitle mbr-fonts-style display-5"
+                      >
+                        <strong>Fixed Segfault:</strong>
+                      </h4>
+                      <p class="mbr-text mbr-fonts-style display-7">
+                        In version 2.1, if an element of a list is stored in a
+                        variable and then the list is cleared using 'clear()'
+                        function and then if you try to access that variable,
+                        the interpreter gets halted by Segmentation Fault. This
+                        Bug is fixed by optimization & correction of Memory
+                        model & Garbage Collector.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="item features-without-image col-12">
+                    <div class="item-wrapper">
+                      <h4
+                        class="mbr-section-subtitle mbr-fonts-style display-5"
+                      >
+                        <strong>Fixed Variable Analysis:</strong>
+                      </h4>
+                      <p class="mbr-text mbr-fonts-style display-7">
+                        In version 2.1, if a function is being declared within
+                        sub-scope and then it is used outside that scope, the
+                        runtime error is triggered instead of compile time
+                        error. This problem is fixed now.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="item features-without-image col-12">
+                    <div class="item-wrapper">
+                      <h4
+                        class="mbr-section-subtitle mbr-fonts-style display-5"
+                      >
+                        <strong>Interpreter Optimization:</strong>
+                      </h4>
+                      <p class="mbr-text mbr-fonts-style display-7">
+                        SRON interpreter's is optimized greatly with 48%
+                        enhancement in speed and Power usage decreased by 25%.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="item features-without-image col-12">
+                    <div class="item-wrapper">
+                      <h4
+                        class="mbr-section-subtitle mbr-fonts-style display-5"
+                      >
+                        <strong>Mutating code support:</strong>
+                      </h4>
+                      <p class="mbr-text mbr-fonts-style display-7">
+                        The bytecode is being cached by the interpreter so SRON
+                        now doesn't support mutating code.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="item features-without-image col-12">
+                    <div class="item-wrapper">
+                      <h4
+                        class="mbr-section-subtitle mbr-fonts-style display-5"
+                      >
+                        <strong>Open source 2.1:</strong>
+                      </h4>
+                      <p class="mbr-text mbr-fonts-style display-7">
+                        SRON v2.1 is now completely open sourced. Check it out
+                        from
+                        <a
+                          href="https://github.com/saksham-joshi/SRON"
+                          class="text-primary"
+                          target="_blank"
+                          >here</a
+                        >.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="item features-without-image col-12">
+                    <div class="item-wrapper">
+                      <h4
+                        class="mbr-section-subtitle mbr-fonts-style display-5"
+                      >
+                        <strong>Optimized print & println:</strong>
+                      </h4>
+                      <p class="mbr-text mbr-fonts-style display-7">
+                        Speed of 'print()' and 'println()' is improved even long
+                        print statements even in tight loops.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="item features-without-image col-12">
+                    <div class="item-wrapper">
+                      <h4
+                        class="mbr-section-subtitle mbr-fonts-style display-5"
+                      >
+                        <strong>Removed 'free' attribute:</strong>
+                      </h4>
+                      <p class="mbr-text mbr-fonts-style display-7">
+                        As everything related to memory is managed by Garbage
+                        Collector so the '<strong>free</strong>' attribute is
+                        removed which opened new gates for better optimizations.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="item features-without-image col-12">
+                    <div class="item-wrapper">
+                      <h4
+                        class="mbr-section-subtitle mbr-fonts-style display-5"
+                      >
+                        <strong>Removed execution time message:</strong>
+                      </h4>
+                      <p class="mbr-text mbr-fonts-style display-7">
+                        After complete execution of the code, the interpreter
+                        use to print the total time taken to execute the code.
+                        That is removed and now to get the execution time, you
+                        should call '<strong>get_exec_code()</strong>' function
+                        which returns the time taken in value of type
+                        <strong>'Double'</strong>.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="item features-without-image col-12">
+                    <div class="item-wrapper">
+                      <h4
+                        class="mbr-section-subtitle mbr-fonts-style display-5"
+                      >
+                        <strong>Safe and secure bytecode:</strong>
+                      </h4>
+                      <p class="mbr-text mbr-fonts-style display-7">
+                        Before version 2.2, the bytecode generated by the
+                        compiler can be modified by renaming the bytecode file
+                        and its modification cannot be detected but now SRON's
+                        interpreter will verify the integrity of the bytecode
+                        before executing its code.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="item features-without-image col-12">
+                    <div class="item-wrapper">
+                      <h4
+                        class="mbr-section-subtitle mbr-fonts-style display-5"
+                      >
+                        <strong>Strict case-sensitivity:</strong>
+                      </h4>
+                      <p class="mbr-text mbr-fonts-style display-7">
+                        Function calls and their declaration is now strictly
+                        case sensitive. If not followed, you will face both
+                        compile and runtime errors.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-12 mt-5">
-          <p class="mbr-fonts-style copyright display-7">
-            ©<em>Copyright</em>&nbsp; <strong>Saksham Joshi</strong> <em>- All Rights Reserved
-            </em></p>
+      </div>
+    </section>
+
+    <!--SRON VERSION 2.1-->
+    <section
+      data-bs-version="5.1"
+      class="article8 cid-upyv5ZNLR0"
+      id="article08-1l"
+    >
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="card col-md-12 col-lg-9">
+            <div class="card-wrapper">
+              <div class="image-wrapper d-flex justify-content-center mb-4">
+                <img
+                  src="assets/images/sron-logo-1916x1916.webp"
+                  alt="Mobirise Website Builder"
+                />
+              </div>
+              <div class="card-content-text">
+                <h3 class="card-title mbr-fonts-style mbr-white mt-3 mb-4 display-2">
+                  <strong>Version 2.1:</strong>
+                </h3>
+                <div class="row card-box align-left">
+                  <div class="item features-without-image col-12 active">
+                    <div class="item-wrapper">
+                      <h4
+                        class="mbr-section-subtitle mbr-fonts-style mb-3 display-5"
+                      >
+                        <strong>Added Garbage Collector:</strong>
+                      </h4>
+                      <p class="mbr-text mbr-fonts-style display-7">
+                        Many contributors reported that they found memory leaks
+                        and related bugs in SRON. SRON's Garbage Collector
+                        manages memory automatically and avoid any type of
+                        memory leaks making SRON, a safe and stable language.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="item features-without-image col-12">
+                    <div class="item-wrapper">
+                      <h4
+                        class="mbr-section-subtitle mbr-fonts-style display-5"
+                      >
+                        <strong>Added new datatype 'Collective':</strong>
+                      </h4>
+                      <p class="mbr-text mbr-fonts-style display-7">
+                        'Collective', a abstracted-base type of 'String' and
+                        'List'. You cannot directly create 'Collective'
+                        variables but it works in abstracted format behind
+                        'String' and 'List' type values.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="item features-without-image col-12">
+                    <div class="item-wrapper">
+                      <h4
+                        class="mbr-section-subtitle mbr-fonts-style display-5"
+                      >
+                        <strong>Added Strict argument passing:</strong>
+                      </h4>
+                      <p class="mbr-text mbr-fonts-style display-7">
+                        SRON provides argument checks for runtime using
+                        <strong>Int_s</strong>, <strong>Double_s</strong>,
+                        <strong>Char_s</strong>, <strong>String_s</strong>,
+                        <strong>Bool_s</strong> and
+                        <strong>List_s. </strong>These keywords checks the type
+                        of arguments passed to a function and if the passed
+                        argument is not of expected type, then throws the
+                        exception.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="item features-without-image col-12">
+                    <div class="item-wrapper">
+                      <h4
+                        class="mbr-section-subtitle mbr-fonts-style display-5"
+                      >
+                        <strong>Added Static typing:</strong>
+                      </h4>
+                      <p class="mbr-text mbr-fonts-style display-7">
+                        SRON is now a statically + dynamically typed programming
+                        language. For static typing use
+                        <strong>Int, Double, Char, Bool, String </strong
+                        >and<strong> List.</strong>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="item features-without-image col-12">
+                    <div class="item-wrapper">
+                      <h4
+                        class="mbr-section-subtitle mbr-fonts-style display-5"
+                      >
+                        <strong>Better Semantic Analysis:</strong>
+                      </h4>
+                      <p class="mbr-text mbr-fonts-style display-7">
+                        SRON version 2.1's compiler is a 3-phased vector-based
+                        compiler. It checks the source code, detects syntax
+                        errors and displays accurate error messages for great
+                        developer experience.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="item features-without-image col-12">
+                    <div class="item-wrapper">
+                      <h4
+                        class="mbr-section-subtitle mbr-fonts-style display-5"
+                      >
+                        <strong>Bitwise operators added:</strong>
+                      </h4>
+                      <p class="mbr-text mbr-fonts-style display-7">
+                        Added bitwise operators to optimize your code on a whole
+                        another level. Introducing <strong>xor</strong>,
+                        <strong>lsft</strong>(left shift),
+                        <strong>rsft</strong>(right shift),
+                        <strong>and</strong>(bitwise
+                        and)<strong>&nbsp;</strong>, <strong>or</strong>(bitwise
+                        or)&nbsp;and <strong>not</strong>(bitwise not).
+                      </p>
+                    </div>
+                  </div>
+                  <div class="item features-without-image col-12">
+                    <div class="item-wrapper">
+                      <h4
+                        class="mbr-section-subtitle mbr-fonts-style display-5"
+                      >
+                        <strong>Compiler optimization:</strong>
+                      </h4>
+                      <p class="mbr-text mbr-fonts-style display-7">
+                        SRON's compiler is highly optimized for big codebases.
+                        Also, the memory usage of compiler is reduced by 75%.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="item features-without-image col-12">
+                    <div class="item-wrapper">
+                      <h4
+                        class="mbr-section-subtitle mbr-fonts-style display-5"
+                      >
+                        <strong>Compile-time optimization:</strong>
+                      </h4>
+                      <p class="mbr-text mbr-fonts-style display-7">
+                        SRON's compiler removes dead code and unimportant tokens
+                        to generate highly optimized bytecode. Also, it hashes
+                        variables, inbuilt function etc. to reduce memory and
+                        power usage during&nbsp; runtime and increase the speed
+                        massively.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="item features-without-image col-12">
+                    <div class="item-wrapper">
+                      <h4
+                        class="mbr-section-subtitle mbr-fonts-style display-5"
+                      >
+                        <strong>Console attribute:</strong>
+                      </h4>
+                      <p class="mbr-text mbr-fonts-style display-7">
+                        For faster, efficient and optimized printing of values
+                        in command line, use 'console' attribute which will not
+                        create argument list like 'print' functions and linearly
+                        prints the values in console removing extra overheads
+                        and improved performance. Constant values written in
+                        'console' attribute is written as it to reduce memory
+                        usage.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="item features-without-image col-12">
+                    <div class="item-wrapper">
+                      <h4
+                        class="mbr-section-subtitle mbr-fonts-style display-5"
+                      >
+                        <strong>Fixed 54+ bugs:</strong>
+                      </h4>
+                      <p class="mbr-text mbr-fonts-style display-7">
+                        SRON version 1.5 has various memory leaks, bugs and
+                        vulnerabilities. SRON version 2.1 fixed almost 54+ bugs
+                        and vulnerabilities all of them making it more stable
+                        language.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="item features-without-image col-12">
+                    <div class="item-wrapper">
+                      <h4
+                        class="mbr-section-subtitle mbr-fonts-style display-5"
+                      >
+                        <strong>Foreach loop added:</strong>
+                      </h4>
+                      <p class="mbr-text mbr-fonts-style display-7">
+                        SRON version 2.1 adds foreach loop for faster value
+                        access with easy syntax.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="item features-without-image col-12">
+                    <div class="item-wrapper">
+                      <h4
+                        class="mbr-section-subtitle mbr-fonts-style display-5"
+                      >
+                        <strong>Interpreter Optimization:</strong>
+                      </h4>
+                      <p class="mbr-text mbr-fonts-style display-7">
+                        SRON interpreter's memory usage is decreased by 72%.
+                        Power usage decreased by 50%. Speed is increased by 48%
+                        for multiple scenarios.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="item features-without-image col-12">
+                    <div class="item-wrapper">
+                      <h4
+                        class="mbr-section-subtitle mbr-fonts-style display-5"
+                      >
+                        <strong>Removed 'comment' attribute:</strong>
+                      </h4>
+                      <p class="mbr-text mbr-fonts-style display-7">
+                        Versions before 2.1 have '<strong>comment</strong>'
+                        attribute to make comments but in this new version,
+                        'comment' attribute is removed.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="item features-without-image col-12">
+                    <div class="item-wrapper">
+                      <h4
+                        class="mbr-section-subtitle mbr-fonts-style display-5"
+                      >
+                        <strong>Make comments using '@':</strong>
+                      </h4>
+                      <p class="mbr-text mbr-fonts-style display-7">
+                        Now make comments using '@'. You can even make multiline
+                        comments (only outside the function scope) using '@' if
+                        there is '{' and you want to make it comment line. '@'
+                        will move the compiler source code read's seek to the
+                        next line.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="item features-without-image col-12">
+                    <div class="item-wrapper">
+                      <h4
+                        class="mbr-section-subtitle mbr-fonts-style display-5"
+                      >
+                        <strong>Math Block Syntax changed (~{ }~):</strong>
+                      </h4>
+                      <p class="mbr-text mbr-fonts-style display-7">
+                        SRON's Mathematical block are now declared using
+                        '<strong>~{</strong>' instead of using
+                        '<strong>~</strong>' only.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="item features-without-image col-12">
+                    <div class="item-wrapper">
+                      <h4
+                        class="mbr-section-subtitle mbr-fonts-style display-5"
+                      >
+                        <strong>New assignment operator (+=, -= ...):</strong>
+                      </h4>
+                      <p class="mbr-text mbr-fonts-style display-7">
+                        Assignment operators are fast and quick, also it do not
+                        change the underlying type of the variable. SRON's
+                        version 2.1 provides +=, -=, *=, /=, %= and ^=
+                        assignment operators.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="item features-without-image col-12">
+                    <div class="item-wrapper">
+                      <h4
+                        class="mbr-section-subtitle mbr-fonts-style display-5"
+                      >
+                        <strong>Numeric attributes removed:</strong>
+                      </h4>
+                      <p class="mbr-text mbr-fonts-style display-7">
+                        In SRON version 1.5 and before, we use numeric
+                        attributes but the new version 2.1 removed this to make
+                        writing code more faster and readable.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="item features-without-image col-12">
+                    <div class="item-wrapper">
+                      <h4
+                        class="mbr-section-subtitle mbr-fonts-style display-5"
+                      >
+                        <strong>Open source:</strong>
+                      </h4>
+                      <p class="mbr-text mbr-fonts-style display-7">
+                        SRON is now an open source programming language. Go
+                        <a
+                          href="https://github.com/saksham-joshi/SRON"
+                          class="text-primary"
+                          target="_blank"
+                          >here</a
+                        >
+                        and read.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="item features-without-image col-12">
+                    <div class="item-wrapper">
+                      <h4
+                        class="mbr-section-subtitle mbr-fonts-style display-5"
+                      >
+                        <strong>Precedence changed:</strong>
+                      </h4>
+                      <p class="mbr-text mbr-fonts-style display-7">
+                        Precedence of '<strong>&lt;='&nbsp;</strong>,
+                        '<strong>&gt;='&nbsp;</strong>,
+                        '<strong>&gt;'&nbsp;</strong>,
+                        '<strong>&lt;'&nbsp;</strong>&nbsp;'<strong
+                          >==' ,&nbsp;</strong
+                        >'<strong>!=</strong>' changed. Now, &lt;=, &gt;=, &lt;,
+                        &gt; will have higher precedence than == and !=.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="item features-without-image col-12">
+                    <div class="item-wrapper">
+                      <h4
+                        class="mbr-section-subtitle mbr-fonts-style display-5"
+                      >
+                        <strong>Returning particular value types:</strong>
+                      </h4>
+                      <p class="mbr-text mbr-fonts-style display-7">
+                        The new SRON version 2.1 provides you the feature to set
+                        the return type of the function using
+                        '<strong>type</strong>' attribute.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="item features-without-image col-12">
+                    <div class="item-wrapper">
+                      <h4
+                        class="mbr-section-subtitle mbr-fonts-style display-5"
+                      >
+                        <strong>Rotate attribute:</strong>
+                      </h4>
+                      <p class="mbr-text mbr-fonts-style display-7">
+                        To swap values of two variables efficiently or shifting
+                        many values, then use '<strong>rotate</strong>'
+                        attribute which will optimize the process during compile
+                        time resulting in faster performance.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="item features-without-image col-12">
+                    <div class="item-wrapper">
+                      <h4
+                        class="mbr-section-subtitle mbr-fonts-style display-5"
+                      >
+                        <strong>Safe and secure bytecode:</strong>
+                      </h4>
+                      <p class="mbr-text mbr-fonts-style display-7">
+                        Before version 2.1, the bytecode generated by the
+                        compiler is in text format which makes it easier to
+                        decompile and change. SRON's version 2.1 introduces a
+                        whole new bytecode format which is in binary so making
+                        changes and decompiling it is near to impossible.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="item features-without-image col-12">
+                    <div class="item-wrapper">
+                      <h4
+                        class="mbr-section-subtitle mbr-fonts-style display-5"
+                      >
+                        <strong>Strict compare operator (===):</strong>
+                      </h4>
+                      <p class="mbr-text mbr-fonts-style display-7">
+                        To check if the type of both values is same and so their
+                        content, then use this operator. It compares the values
+                        after their types is same.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+    </section>
+
+    <section
+      data-bs-version="5.1"
+      class="footer3 cid-upytSods3S"
+      once="footers"
+      id="footer03-1k"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="row-links">
+            <ul class="header-menu">
+              <li class="header-menu-item mbr-fonts-style display-5">
+                <a
+                  href="https://sron.gitbook.io/docs"
+                  class="text-primary"
+                  target="_blank"
+                  >Docs</a
+                >
+              </li>
+              <li class="header-menu-item mbr-fonts-style display-5">
+                <a
+                  href="https://sron.gitbook.io/docs/sample-codes"
+                  class="text-primary"
+                  target="_blank"
+                  >Sample</a
+                >
+              </li>
+              <li class="header-menu-item mbr-fonts-style display-5">
+                <a href="index.html" class="text-primary" target="_blank"
+                  >Home</a
+                >
+              </li>
+              <li class="header-menu-item mbr-fonts-style display-5">
+                <a href="logs.html" class="text-primary" target="_blank"
+                  >Logs</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-12 mt-4">
+            <div class="social-row">
+              <div class="soc-item">
+                <a href="https://sron.gitbook.io/docs/donate" target="_blank">
+                  <span
+                    class="mbr-iconfont display-7 mobi-mbri-cash mobi-mbri"
+                  ></span>
+                </a>
+              </div>
+              <div class="soc-item">
+                <a href="https://x.com/sakshamjoshi27" target="_blank">
+                  <span class="mbr-iconfont socicon-twitter socicon"></span>
+                </a>
+              </div>
+              <div class="soc-item">
+                <a
+                  href="https://www.instagram.com/sakshamjoshi27/"
+                  target="_blank"
+                >
+                  <span class="mbr-iconfont socicon-instagram socicon"></span>
+                </a>
+              </div>
+              <div class="soc-item">
+                <a
+                  href="https://linkedin.com/in/sakshamjoshi27"
+                  target="_blank"
+                >
+                  <span class="mbr-iconfont socicon-linkedin socicon"></span>
+                </a>
+              </div>
+              <div class="soc-item">
+                <a href="https://github.com/saksham-joshi/" target="_blank">
+                  <span class="mbr-iconfont mbrib-github"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 mt-5">
+            <p class="mbr-fonts-style copyright display-7">
+              ©<em>&nbsp;Copyright</em>&nbsp; <strong>Saksham Joshi</strong>
+              <em>- All Rights Reserved </em>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/smoothscroll/smooth-scroll.js"></script>
+    <script src="assets/ytplayer/index.js"></script>
+    <script src="assets/dropdown/js/navbar-dropdown.js"></script>
+    <script src="assets/theme/js/script.js"></script>
+
+    <div id="scrollToTop" class="scrollToTop mbr-arrow-up">
+      <a style="text-align: center"
+        ><i
+          class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"
+        ></i
+      ></a>
     </div>
-  </section>
-
-  <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/smoothscroll/smooth-scroll.js"></script>
-  <script src="assets/ytplayer/index.js"></script>
-  <script src="assets/dropdown/js/navbar-dropdown.js"></script>
-  <script src="assets/theme/js/script.js"></script>
-
-
-  <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i
-        class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a></div>
-  <input name="animation" type="hidden">
-</body>
-
+    <input name="animation" type="hidden" />
+  </body>
 </html>
